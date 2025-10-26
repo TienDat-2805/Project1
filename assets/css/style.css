@@ -44,9 +44,25 @@ a {
   border-radius: 999px;
   background: #171100;
 }
+
 .btn:hover {
   opacity: 0.9;
   cursor: pointer;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+.break-all {
+  word-break: break-all;
 }
 /* header */
 .header {
